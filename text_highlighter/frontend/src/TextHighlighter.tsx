@@ -103,7 +103,7 @@ class MyComponent extends StreamlitComponentBase<BaseState> {
       let otherAnnotation = null;
       for (const annotation2 of annotations) {
         if (annotation1.start === annotation2.start && annotation1.end === annotation2.end) continue;
-        if ((annotation2.start <= annotation1.start && annotation2.end >= annotation1.start) || (annotation2.start <= annotation1.end && annotation2.end >= annotation1.end)) {
+        if ((annotation2.start <= annotation1.start && annotation2.end > annotation1.start) || (annotation2.start < annotation1.end && annotation2.end >= annotation1.end)) {
           isOverlapping = true;
           otherAnnotation = annotation2;
           break;
