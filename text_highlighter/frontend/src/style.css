@@ -10,6 +10,7 @@ mark {
     padding: 0 !important;
     color: inherit;
     line-height: 1 !important;
+    border-radius: 5px;
 }
 
 mark span {
@@ -23,6 +24,7 @@ mark span {
     line-height: 6px !important;
     width: 100%;
     text-align: center;
+    border-radius: 5px;
 }
 
 .label-pill {
